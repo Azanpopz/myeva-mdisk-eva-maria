@@ -641,7 +641,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", url=f"https://earn4link.in/st?api=14bf082db3caa5fa0be9baa1a46e2fc44d17a2bd&url=https://t.me/{temp.U_NAME}?start={ident}_{file_id}"
+                    text=f"[{get_size(file.file_size)}] {file.file_name}", url=f"https://earn4link.in/st?api=14bf082db3caa5fa0be9baa1a46e2fc44d17a2bd&url=https://t.me/{temp.U_NAME}?start={file_id}"
                 ),
             ]
             for file in files
@@ -651,11 +651,11 @@ async def auto_filter(client, msg, spoll=False):
             [
                 InlineKeyboardButton(
                     text=f"{file.file_name}",
-                    url=f"https://earn4link.in/st?api=14bf082db3caa5fa0be9baa1a46e2fc44d17a2bd&url=https://t.me/{temp.U_NAME}?start={ident}_{file_id}",
+                    url=f"https://earn4link.in/st?api=14bf082db3caa5fa0be9baa1a46e2fc44d17a2bd&url=https://t.me/{temp.U_NAME}?start={file_id}",
                 ),
                 InlineKeyboardButton(
                     text=f"{get_size(file.file_size)}",
-                    url=f"https://earn4link.in/st?api=14bf082db3caa5fa0be9baa1a46e2fc44d17a2bd&url=https://t.me/{temp.U_NAME}?start={ident}_{file_id}",
+                    url=f"https://earn4link.in/st?api=14bf082db3caa5fa0be9baa1a46e2fc44d17a2bd&url=https://t.me/{temp.U_NAME}?start={file_id}",
                 ),
             ]
             for file in files
